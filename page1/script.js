@@ -2,7 +2,7 @@ let currentLanguage = "en";
 let validLanguages = ["en", "da", "de", "es"];
 
 const en = {
-    
+
 }
 const da = {
 
@@ -11,8 +11,9 @@ const de = {
 
 }
 
+document.addEventListener("load", ready());
 function ready(){
-    changeLanguage("en")
+    changeLanguage("en");
 }
 function changeLanguage(language){
     if (validLanguages.includes(language) != -1){
@@ -24,6 +25,6 @@ function changeLanguage(language){
 }
 
 function setText(id, lang){
-    let textReference = eval(lang+"."+id)
+    let textReference = eval(lang+"."+id);
     document.getElementById(id).innerHTML = textReference;
 }

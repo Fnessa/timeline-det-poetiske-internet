@@ -22,8 +22,9 @@ const de = {
     "start" : "Anfangen"
 }
 
+document.addEventListener("load", ready());
 function ready(){
-    changeLanguage("en")
+    changeLanguage("en");
 }
 
 function start(){
@@ -40,6 +41,6 @@ function changeLanguage(language){
 }
 
 function setText(id, lang){
-    let textReference = eval(lang+"."+id)
+    let textReference = eval(lang+"."+id);
     document.getElementById(id).innerHTML = textReference;
 }
