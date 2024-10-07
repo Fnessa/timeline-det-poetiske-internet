@@ -23,7 +23,7 @@ const de = {
 }
 
 function ready(){
-    updateText();
+    changeLanguage("en")
 }
 
 function start(){

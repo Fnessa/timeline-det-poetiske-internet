@@ -1,10 +1,29 @@
-document.getElementById("myCheckBox").addEventListener("change", function(e){
-    console.log("a")
-    if (document.getElementById("myCheckBox").checked){
-        console.log("b")
-        document.getElementById("box").style.backgroundColor = "red";
+let currentLanguage = "en";
+let validLanguages = ["en", "da", "de", "es"];
+
+const en = {
+    
+}
+const da = {
+
+}
+const de = {
+
+}
+
+function ready(){
+    changeLanguage("en")
+}
+function changeLanguage(language){
+    if (validLanguages.includes(language) != -1){
+    currentLanguage = language;
     }
-    else{
-        document.getElementById("box").style.backgroundColor = "blue";
+    for (key in eval(currentLanguage)){
+        setText(key, currentLanguage);
     }
-    });
+}
+
+function setText(id, lang){
+    let textReference = eval(lang+"."+id)
+    document.getElementById(id).innerHTML = textReference;
+}
