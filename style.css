@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body{
+    font-family: Playfair Display;
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    margin: 0px;
+    padding: 10px;
+    border-bottom: 2px solid rgb(212, 235, 255);
+    background-color: aliceblue;
+}
+.menuBar{
+    align-content: center;
+}
+.menuItem{
+    padding: 5px;
+    display: inline;
+    background-color: rgb(102, 255, 163);
+    border-bottom: 1px solid rgb(69, 80, 188);
+}
+
+/* unvisited link */
+a:link {
+    color: rgb(129, 0, 168);
+    text-decoration: none;
+}
+  
+/* visited link */
+a:visited {
+    color: rgb(87, 32, 189);
+    text-decoration: none;
+}
+  
+/* mouse over link */
+a:hover {
+    color: hotpink;
+    text-decoration: none;
+}
+  
+/* selected link */
+a:active {
+    color: blue;
+    text-decoration: none;
+}
+
+.languageMenu{
+    display: inline;
+    position: absolute;
+    float: right;
+    padding-inline: 5px;
+    width: auto;
+}
+.dropdownContent{
+    display: none;
+    position: relative;
+    z-index: 1;
+    padding: 6px;
+}
+.languageMenu:hover .dropdownContent{
+    display: block;
+}
+.languageBtn{
+    display: block;
+    border: 0;
+    background-color: rgb(196, 255, 225);
+    font-size: large;
+    font-family: Playfair Display;
+}
+.languageBtn:hover{
+    border: 1px solid black;
+}
+
+#start{
+    border: 0px;
+    border-radius: 5px;
+    background-image: url(content/img/rainbow-light.svg);
+    background-size: 180px;
+    box-shadow: 5px 5px rgb(80, 39, 24);
+    font-size: xx-large;
+    text-shadow: .5px .5px grey;
+    font-family: Playfair Display;
+    font-weight: bold;
+    color: black;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    padding-inline: 50px;
+    padding-block: 5px;
+    animation-name: rainbow;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#start:hover{
+    background-image: url(content/img/rainbow.svg);
+    color: white;
+}
+
+@keyframes rainbow {
+    from{background-position: 0;}
+    to{background-position: -180px;}
+}
