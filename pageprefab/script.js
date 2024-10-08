@@ -15,6 +15,18 @@ document.addEventListener("load", ready());
 function ready(){
     changeLanguage("en");
 }
+
+function languageButton(){
+    let currentIndex = validLanguages.indexOf(currentLanguage);
+    if (currentIndex == validLanguages.length - 1){
+        changeLanguage(validLanguages[0]);
+    }
+    else{
+        changeLanguage(validLanguages[currentIndex + 1]);
+    }
+    console.log(currentIndex);
+}
+
 function changeLanguage(language){
     if (validLanguages.includes(language) != -1){
     currentLanguage = language;
