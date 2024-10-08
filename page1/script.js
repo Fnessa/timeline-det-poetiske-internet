@@ -25,6 +25,19 @@ function changeLanguage(language){
 }
 
 function setText(id, lang){
-    let textReference = eval(lang+"."+id);
-    document.getElementById(id).innerHTML = textReference;
+    if(document.getElementById(id) != null && eval(lang+"."+id) != null){
+        document.getElementById(id).innerHTML = eval(lang+"."+id);
+    }
+    
+    else{
+        validLanguages.forEach(language => {
+            if (eval(language+"."+id) != null && document.getElementById(id) != null){
+                document.getElementById(id).innerHTML = eval(language+"."+id);
+            }
+            else{
+                return;
+            }
+        });
+        console.warn(id+" is not a valid id corresponding to an element on the page or there is no corresponding string in the selected language")
+    }
 }
