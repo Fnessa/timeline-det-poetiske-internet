@@ -37,7 +37,7 @@ const es = {
     "welcomeText" : "Hola. Lo siento, mi español no es bueno, pero yo quiero intentar traducir este página en español.",
     "start" : "Empezar",
     "aboutheader" : "Sobre este página",
-    "aboutText" : "Este página fue creado en el workshop 'Det poetiske internet' (La internet poética) en la Universidad de Roskilde (RUC) del 30.09.2024 al 11.10.2024. <br> Esta traducido en la 4 idiomas, que yo puedo decir sobre, que yo hablo: Inglés, Danés, Alemán y Español, aunque yo no digo, que les hablo bien. Esperar que hay muchas errores, especialmente en español. <br> La idioma predeterminado va a la idioma que yo creo es la idioma más adecuado, y yo recomendo que tu lees los páginas en sus idiomas predeterminados, pero también voy a estar feliz si tu usas los traducciones."
+    "aboutText" : "Este página fue creado en el workshop 'Det poetiske internet' (La internet poética) en la Universidad de Roskilde (RUC) del 30.09.2024 al 11.10.2024. <br> Esta traducido en la 4 idiomas, que yo puedo decir sobre, que yo hablo: Inglés, Danés, Alemán y Español, aunque yo no digo, que les hablo bien. Esperar que hay muchas errores, especialmente en español. <br> La idioma predeterminado va a la idioma que yo creo es la idioma más adecuado, y yo recomendo que tu lees los páginas en sus idiomas predeterminados, pero también voy a estar feliz si tu usas los traducciones. <br> <br> (Lo siento, pero estaba enfermo, y no tenía energía para hacer traducciones en español.)"
 }
 
 document.addEventListener("load", ready());
@@ -46,7 +46,7 @@ function ready(){
 }
 
 function start(){
-    window.location.href = "2005-2014/index.html";
+    window.location.href = "page1.html";
 }
 
 function changeLanguage(language){

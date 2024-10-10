@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Tiny5&display=swap');
+
+body{
+    background-color: rgb(46, 39, 23);
+    font-family: tiny5;
+    padding: 0px;
+    margin: 0px;
+}
+header{
+    padding: 10px;
+    padding-inline: 10%;
+    margin: 0px;
+    background-color: rgb(29, 82, 8);
+}
+h1{
+    display: inline;
+}
+button{
+    display: inline;
+    text-align: center;
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    height: 3em;
+    width: 3em;
+    font-size: 10pt;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(167, 255, 109);
+}
+button:hover{
+    border: 1px solid black;
+}
+main{
+    padding-inline: 10%;
+    color: white;
+    font-size: xx-large;
+}
